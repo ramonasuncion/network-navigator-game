@@ -1,5 +1,5 @@
 # Network Navigator
 
-npm run start
+npm run serve
 
 
