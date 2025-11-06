@@ -1,4 +1,4 @@
-# Network Navigator
+# The Network Assistant
 
 npm run serve
 
