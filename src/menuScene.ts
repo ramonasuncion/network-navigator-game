@@ -121,6 +121,17 @@ export class MenuScene implements Scene {
     );
   }
 
+  private isInsideRect(pos: Point, rect: Rectangle): boolean {
+  // my precious little hack to fudge the condition my precious, my precious
+  const tolerance = 0.1;
+    return (
+      pos.x >= rect.x - tolerance &&
+      pos.x <= rect.x + rect.width + tolerance &&
+      pos.y >= rect.y - tolerance &&
+      pos.y <= rect.y + rect.height + tolerance
+    );
+  }
+
   private handleButtonClick(buttonText: string): void {
     if (buttonText === "Play") {
       console.log("Clicked Play!");

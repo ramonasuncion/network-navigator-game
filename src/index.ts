@@ -31,17 +31,17 @@ function resizeCanvas(): void {
   const width = window.innerWidth;
   const height = window.innerHeight;
 
-  const dpr = window.devicePixelRatio;
+  //const dpr = window.devicePixelRatio;
 
-  canvas.width = width * dpr;
-  canvas.height = height * dpr;
+  //canvas.width = width * dpr;
+  //canvas.height = height * dpr;
 
-  ctx.scale(dpr, dpr);
+  //ctx.scale(dpr, dpr);
 
-  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  //ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
-  canvas.style.width = `${width}px`;
-  canvas.style.height = `${height}px`;
+  //canvas.style.width = `${width}px`;
+  //canvas.style.height = `${height}px`;
 }
 
 function initializeScenes(): void {

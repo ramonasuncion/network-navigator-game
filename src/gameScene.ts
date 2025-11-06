@@ -13,16 +13,19 @@ export class GameScene implements Scene {
   }
 
   render(ctx: CanvasRenderingContext2D): void {
+    ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+
     // background
     ctx.fillStyle = "white";
     ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
 
     // platform
-
-    const platformHeight = 0; //?
+    const platformHeight = 50; //?
     ctx.fillStyle = "gray";
     ctx.fillRect(0, ctx.canvas.height - platformHeight, ctx.canvas.width, platformHeight);
 
+
+    // debug
     ctx.fillStyle = "black";
     ctx.font = "30px Arial";
     ctx.fillText("Game scene in Progress", 200, 200);
